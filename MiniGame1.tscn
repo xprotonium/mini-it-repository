@@ -1,0 +1,24 @@
+[gd_scene load_steps=2 format=3 uid="uid://seo8vflxuufw"]
+
+[ext_resource type="Texture2D" uid="uid://dranaao0dupcf" path="res://Minigame1/background.jpg" id="1_ekcrm"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="ParallaxLayer01" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_scale = Vector2(0.5, 0)
+
+[node name="Sprite2D_01" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer01"]
+position = Vector2(444, -224)
+texture = ExtResource("1_ekcrm")
+
+[node name="Sprite2D_02" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer01"]
+position = Vector2(2316, -224)
+texture = ExtResource("1_ekcrm")
+
+[node name="ParallaxLayer02" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
+
+[node name="ParallaxLayer03" type="ParallaxLayer" parent="ParallaxBackground"]
+visible = false
